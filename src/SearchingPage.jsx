@@ -9,14 +9,12 @@ import NoDataCard from './components/Nodata';
 export default function SearchingPage() {
     const [query, setQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
-    console.log("movies response", searchResults)
     const handleSearch = (event) => {
         if (event.key === 'Enter' && query.trim()) {
             const searchUrl = `https://welkin-search-api.vercel.app/search/${query}`;
             fetch(searchUrl)
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log('Search results:', data);
                     setSearchResults(data);
 
                 })
