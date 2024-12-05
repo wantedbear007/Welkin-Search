@@ -15,9 +15,9 @@ const features = [
   },
   {
     icon: Zap,
-    title: "Immediate SEO",
+    title: "Completely Free",
     description:
-      "Quick wins and long-term strategies for sustainable organic growth.",
+      "Access content without any subscription or payment. Just search and find what you need!",
   },
 ];
 

@@ -1,31 +1,31 @@
 export function FAQ() {
   const faqs = [
     {
-      question: "What is SEO?",
+      question: "How does the search engine work?",
       answer:
-        "SEO (Search Engine Optimization) is the practice of optimizing your website to increase its visibility in search engine results pages naturally.",
+        "Our search engine scans publicly shared Google Drive links and indexes them, allowing you to search for specific content across the internet.",
     },
     {
-      question: "Why is SEO important for my business?",
+      question: "Is there a cost to use the website?",
       answer:
-        "SEO helps increase your online visibility, drives targeted traffic, and builds credibility with your audience.",
+        "No, our service is completely free! Just search and access the content you need.",
     },
     {
-      question: "How long does it take to see results from SEO?",
+      question: "What type of content can I find?",
       answer:
-        "SEO is a long-term strategy, typically taking 3-6 months to see significant results, depending on various factors.",
+        "You can find a variety of public content including movies, books, software, documents, and much more shared via Google Drive links.",
     },
     {
-      question: "How much does SEO cost?",
+      question: "Is it legal to access these files?",
       answer:
-        "Our SEO packages are customized based on your needs and goals, starting from competitive rates for small businesses.",
+        "We index publicly available content that has been shared by users on Google Drive. We recommend verifying the legality of content before downloading or using it.",
     },
   ];
 
   return (
     <section className="py-20 px-8 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">FAQs</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (
             <details key={index} className="group">

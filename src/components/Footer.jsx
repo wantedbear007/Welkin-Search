@@ -1,10 +1,10 @@
-import { Megaphone } from "lucide-react";
+import { Facebook, Instagram, Megaphone, Twitch, X } from "lucide-react";
 import logo from "../assets/logo/welkin.png"
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src={logo} alt="Logo" className="w-12 h-10 rounded-lg" />
@@ -73,6 +73,15 @@ export function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+        </div> */}
+        <div className=" text-white py-6 text-center">
+          <img src={logo} alt="Logo" className="w-12 h-10 rounded-lg mx-auto my-4" />
+          <p>Powered by Welkin Search Engine</p>
+          <div className="flex gap-5 justify-center items-center mt-6">
+            <a href="#facebook" className="text-white mx-2 hover:text-blue-500"><Facebook/></a>
+            <a href="#twitter" className="text-white mx-2 "><X/></a>
+            <a href="#instagram" className="text-white mx-2 hover:text-pink-500"><Instagram/></a>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">

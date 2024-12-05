@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./Button";
 
 
 export function Hero() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/search"); 
+  };
   return (
     <div className="px-8 py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-6xl mx-auto">
@@ -16,7 +21,8 @@ export function Hero() {
               Search for the files, movies, music, or documents you need across Google Drive. Fast and easy access to public content, all in one place.
             </p>
             <div className="flex items-center gap-4">
-              <Link to="/search">Try it Free</Link>
+              <Button onClick={handleClick}>Try it Free</Button>
+              
               <div className="flex -space-x-2">
                 {[...Array(4)].map((_, i) => (
                   <img
