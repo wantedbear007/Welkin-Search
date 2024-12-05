@@ -28,7 +28,7 @@ export function Header() {
   }, []);
   return (
     <header className="bg-white py-4 px-6 flex items-center justify-between border-b" ref={dropdownRef}>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer">
         <img src={logo} alt="Logo" className="w-10 h-10 rounded-lg" onClick={handleClick}/>
         <nav className="flex gap-6">
           {["Welkin ",].map(
