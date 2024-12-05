@@ -46,3 +46,22 @@ To start the project locally, follow these steps:
 
 ## Project Structure
 
+
+
+
+## Services
+
+### Our Services
+
+- **Fast and Accurate Search Engine**: Quickly find publicly shared Google Drive links for various types of content.
+- **Easy Access to Shared Content**: Open files directly from Google Drive links with no obstacles.
+- **Global Content Discovery**: Discover content shared worldwide on Google Drive.
+- **Fast Results, Always Up-to-Date**: Our search engine delivers up-to-date and accurate results for your needs.
+
+## Contributing
+
+If you want to contribute to this project, feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
