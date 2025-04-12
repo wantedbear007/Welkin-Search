@@ -5,8 +5,11 @@ import CourseCard from './components/CourseCard';
 import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import NoDataCard from './components/Nodata';
+import abc from "./assets/logo/logo.png"
 
 export default function SearchingPage() {
+    console.log("hello world")
+    console.log("abc ", abc)
     const [query, setQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const handleSearch = (event) => {
