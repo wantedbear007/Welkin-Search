@@ -5,11 +5,15 @@ import CourseCard from './components/CourseCard';
 import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import NoDataCard from './components/Nodata';
+
 import abc from "./assets/logo/logo.png"
+import launch from "./assets/logo/launch.gif"
+
 
 export default function SearchingPage() {
     console.log("hello world")
     console.log("abc ", abc)
+    console.log("gif ", launch)
     const [query, setQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const handleSearch = (event) => {
@@ -33,6 +37,7 @@ export default function SearchingPage() {
       <div className="min-h-screen bg-gray-50">
           <Header />
           <main className="max-w-7xl mx-auto py-6">
+            {/* <img src={userimage}></img> */}
               <SearchBar setQuery={setQuery} handleSearch={handleSearch} query={query} />
               <div className="space-y-4 mt-6">
                   {/* {courses.map((course, index) => (
